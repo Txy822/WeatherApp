@@ -5,7 +5,7 @@ data class Hour(
     val chance_of_rain: Int,
     val chance_of_snow: Int,
     val cloud: Int,
-    val condition: ConditionXX,
+    val condition: Condition,
     val dewpoint_c: Double,
     val dewpoint_f: Double,
     val feelslike_c: Double,
