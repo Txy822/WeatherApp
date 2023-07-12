@@ -1,5 +1,9 @@
 package com.tes.weatherapp.data.remote.londonweather.dto
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Astro(
     val is_moon_up: Int,
     val is_sun_up: Int,
@@ -9,4 +13,4 @@ data class Astro(
     val moonset: String,
     val sunrise: String,
     val sunset: String
-)
+): Parcelable

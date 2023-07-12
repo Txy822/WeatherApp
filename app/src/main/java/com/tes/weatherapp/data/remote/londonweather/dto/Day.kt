@@ -1,5 +1,9 @@
 package com.tes.weatherapp.data.remote.londonweather.dto
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Day(
     val air_quality: AirQuality,
     val avghumidity: Double,
@@ -22,4 +26,4 @@ data class Day(
     val totalprecip_mm: Double,
     val totalsnow_cm: Double,
     val uv: Double
-)
+): Parcelable

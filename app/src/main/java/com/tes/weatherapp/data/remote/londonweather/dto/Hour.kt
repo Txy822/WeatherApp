@@ -1,5 +1,9 @@
 package com.tes.weatherapp.data.remote.londonweather.dto
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Hour(
     val air_quality: AirQuality,
     val chance_of_rain: Int,
@@ -35,4 +39,4 @@ data class Hour(
     val wind_mph: Double,
     val windchill_c: Double,
     val windchill_f: Double
-)
+): Parcelable
