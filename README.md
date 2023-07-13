@@ -8,7 +8,7 @@ The app simply displays London weather weekly and hourly basis.
 <div style="display: flex; justify-content: center;">
   <img src="img/main1.png" alt="Screenshot 1" style="width: 33%;" />
   <img src="img/detail1.png" alt="Screenshot 2" style="width: 33%;" />
-  <img src="img/detail2.png" alt="Screenshot 3" style="width: 33%;" />
+  <img src="img/detail2.png" alt="Screenshot 3" style="width: 66%;" />
  
 </div>
 
