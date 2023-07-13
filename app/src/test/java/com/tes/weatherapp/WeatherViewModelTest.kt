@@ -71,8 +71,8 @@ class WeatherViewModelTest {
         viewModel.getWeatherData()
 
         assertEquals(forecast, viewModel.forecast.value)
-        //assertEquals(current, viewModel.current.value)
-        assertEquals(false, viewModel.loading.value)
+        assertEquals(current, viewModel.current.value)
+        assertEquals(true, viewModel.loading.value)
         assertEquals("", viewModel.error.value)
     }
 
@@ -96,7 +96,7 @@ class WeatherViewModelTest {
 
         viewModel.getWeatherData()
         assertEquals(false, viewModel.loading.value)
-        assertEquals("", viewModel.error.value)
+        assertEquals("Error Occurred", viewModel.error.value)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)
