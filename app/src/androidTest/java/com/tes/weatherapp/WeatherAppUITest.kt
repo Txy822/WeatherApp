@@ -8,7 +8,6 @@ import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.printToLog
 import androidx.test.platform.app.InstrumentationRegistry
-import com.tes.weatherapp.presentation.view.DetailScreen
 import com.tes.weatherapp.presentation.view.HomeScreen
 import com.tes.weatherapp.presentation.view.MainActivity
 import org.junit.Assert
