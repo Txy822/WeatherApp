@@ -4,9 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,15 +15,12 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
-import androidx.compose.material3.CardColors
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Divider
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -59,7 +54,6 @@ fun HomeScreen(
     navController: NavController = rememberNavController(),
     viewModel: WeatherViewModel = viewModel()
 ) {
-
     val current by viewModel.current.collectAsState()
     val forecast = viewModel.forecast.collectAsState()
     val loading = viewModel.loading.collectAsState()
@@ -221,7 +215,6 @@ fun WeatherCard(
     dayforecast: ForecastdayModel,
     onItemClick: () -> Unit
 ) {
-
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -286,10 +279,8 @@ fun convertToWeeklyDate_yyyy_mm_dd_hh_mm(dateString: String): String {
     // Define input and output date formats
     val inputDateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault())
     val outputDateFormat = SimpleDateFormat("EEEE", Locale.getDefault())
-
     // Parse the input date string
     val date: Date? = inputDateFormat.parse(dateString)
-
     // Convert the parsed date to the output format
     return if (date != null) {
         outputDateFormat.format(date)
@@ -302,10 +293,8 @@ fun convertToWeeklyDate_yyyy_mm_dd(dateString: String): String {
     // Define input and output date formats
     val inputDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
     val outputDateFormat = SimpleDateFormat("EEEE", Locale.getDefault())
-
     // Parse the input date string
     val date: Date? = inputDateFormat.parse(dateString)
-
     // Convert the parsed date to the output format
     return if (date != null) {
         outputDateFormat.format(date)
@@ -322,7 +311,6 @@ private fun CustomCircularProgressBar() {
             .fillMaxWidth()
             .padding(top = 50.dp, bottom = 50.dp)
     ) {
-
         CircularProgressIndicator(
             modifier = Modifier.size(100.dp),
             color = Color.Green,
