@@ -1,16 +1,13 @@
 package com.tes.weatherapp
 
 import androidx.activity.compose.setContent
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.printToLog
-import androidx.compose.ui.test.hasText
-import androidx.navigation.NavController
 import androidx.test.platform.app.InstrumentationRegistry
-import com.tes.weatherapp.presentation.view.DetailScreen
 import com.tes.weatherapp.presentation.view.HomeScreen
 import com.tes.weatherapp.presentation.view.MainActivity
 import org.junit.Assert

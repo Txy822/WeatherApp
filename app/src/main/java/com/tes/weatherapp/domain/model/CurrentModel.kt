@@ -1,7 +1,6 @@
 package com.tes.weatherapp.domain.model
 
 import android.os.Parcelable
-import com.tes.weatherapp.data.remote.londonweather.dto.AirQuality
 import com.tes.weatherapp.data.remote.londonweather.dto.Condition
 import kotlinx.android.parcel.Parcelize
 

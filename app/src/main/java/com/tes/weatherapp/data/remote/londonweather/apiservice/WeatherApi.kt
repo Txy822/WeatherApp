@@ -7,7 +7,6 @@ import retrofit2.http.Query
 
 interface WeatherApi {
 
-    //https://api.weatherapi.com/v1/forecast.json?key=5d15e1bea1c94b4f99c84044231007&q=London&days=7&aqi=yes&alerts=yes
     @GET(END)
     suspend fun getWeatherResponse(
         @Query("key") api_key: String = BuildConfig.api_key,
