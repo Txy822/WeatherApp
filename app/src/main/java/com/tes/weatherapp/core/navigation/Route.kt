@@ -1,4 +1,4 @@
-package com.tes.weatherapp.core
+package com.tes.weatherapp.core.navigation
 
 sealed class Screen(val route: String) {
     object Home: Screen(route = "home_screen")

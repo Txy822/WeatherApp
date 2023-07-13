@@ -12,8 +12,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.rememberNavController
-import com.tes.weatherapp.core.NavigationGraph
-import com.tes.weatherapp.presentation.theme.WeatherAppTheme
+import com.tes.weatherapp.core.navigation.NavigationGraph
+import com.tes.weatherapp.presentation.view.theme.WeatherAppTheme
 import com.tes.weatherapp.presentation.viewmodel.WeatherViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

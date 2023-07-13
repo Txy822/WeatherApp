@@ -1,4 +1,4 @@
-package com.tes.weatherapp.util
+package com.tes.weatherapp.core.util
 
 sealed class Resource<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T?): Resource<T>(data)

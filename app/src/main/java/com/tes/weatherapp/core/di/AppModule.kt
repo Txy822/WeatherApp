@@ -1,6 +1,5 @@
-package com.tes.weatherapp.di
+package com.tes.weatherapp.core.di
 
-import android.app.Application
 import com.tes.weatherapp.data.remote.londonweather.apiservice.WeatherApi
 import com.tes.weatherapp.data.repository.WeatherRepositoryImpl
 import com.tes.weatherapp.domain.repository.WeatherRepository

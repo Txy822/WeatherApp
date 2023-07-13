@@ -1,4 +1,4 @@
-package com.tes.weatherapp.presentation.theme
+package com.tes.weatherapp.presentation.view.theme
 
 import android.app.Activity
 import android.os.Build

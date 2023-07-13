@@ -1,4 +1,4 @@
-package com.tes.weatherapp.core
+package com.tes.weatherapp.core.navigation
 
 import androidx.compose.runtime.Composable
 

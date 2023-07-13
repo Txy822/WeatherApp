@@ -4,7 +4,7 @@ import com.tes.weatherapp.data.remote.londonweather.apiservice.WeatherApi
 import com.tes.weatherapp.data.remote.londonweather.mapper.toWeatherResponseModel
 import com.tes.weatherapp.domain.model.WeatherResponseModel
 import com.tes.weatherapp.domain.repository.WeatherRepository
-import com.tes.weatherapp.util.Resource
+import com.tes.weatherapp.core.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
@@ -32,9 +32,11 @@ class WeatherRepositoryImpl @Inject constructor(
             }
             finally {
                 emit(Resource.Loading(isLoading = false))
+                emit(Resource.Error("Couldn't load data"))
             }
             remoteData?.let { listings ->
-                emit(Resource.Success(
+                emit(
+                    Resource.Success(
                     data = listings.toWeatherResponseModel()
                 ))
                 emit(Resource.Loading(false))

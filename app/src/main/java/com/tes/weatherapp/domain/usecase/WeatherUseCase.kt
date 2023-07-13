@@ -2,7 +2,7 @@ package com.tes.weatherapp.domain.usecase
 
 import com.tes.weatherapp.domain.model.WeatherResponseModel
 import com.tes.weatherapp.domain.repository.WeatherRepository
-import com.tes.weatherapp.util.Resource
+import com.tes.weatherapp.core.util.Resource
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

@@ -43,7 +43,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import com.tes.weatherapp.R
-import com.tes.weatherapp.core.Screen
+import com.tes.weatherapp.core.navigation.Screen
 import com.tes.weatherapp.domain.model.ForecastdayModel
 import com.tes.weatherapp.presentation.viewmodel.WeatherViewModel
 import java.text.SimpleDateFormat
@@ -200,6 +200,14 @@ fun HomeScreen(
             CustomCircularProgressBar()
         }
     } else if (error.value.isNotBlank() && isConnected) {
+        Box(
+            modifier = Modifier.fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            Text(text = "No Data")
+        }
+    }
+    else {
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center

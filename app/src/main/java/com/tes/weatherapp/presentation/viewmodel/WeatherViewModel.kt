@@ -5,7 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.tes.weatherapp.domain.model.CurrentModel
 import com.tes.weatherapp.domain.model.ForecastModel
 import com.tes.weatherapp.domain.usecase.WeatherUseCase
-import com.tes.weatherapp.util.Resource
+import com.tes.weatherapp.core.util.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
