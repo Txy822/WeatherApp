@@ -36,18 +36,6 @@ class AppModule {
     @Provides
     fun providesApi(retrofit: Retrofit): WeatherApi = retrofit.create(WeatherApi::class.java)
 
-    /*
-    @Provides
-    fun providesDatabase(app: Application): CatFactDatabase {
-        return Room.databaseBuilder(
-            app,
-            CatFactDatabase::class.java,
-            "cat_fact_db.db"
-        )
-            .fallbackToDestructiveMigration()
-            .build()
-    }
-    */
     @Provides
     fun providesRepository(
         api: WeatherApi,

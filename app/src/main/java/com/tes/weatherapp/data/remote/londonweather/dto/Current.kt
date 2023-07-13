@@ -1,5 +1,7 @@
 package com.tes.weatherapp.data.remote.londonweather.dto
 
+import com.tes.weatherapp.domain.model.CurrentModel
+
 data class Current(
     val air_quality: AirQuality?,
     val cloud: Int?,
@@ -26,3 +28,4 @@ data class Current(
     val wind_kph: Double?,
     val wind_mph: Double?
 )
+
